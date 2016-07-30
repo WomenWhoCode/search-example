@@ -1,10 +1,6 @@
 var Companies = React.createClass({
    render(){
-       var showCompanies = function (company) {
-           debugger
-           return React.createElement(Company, { name: company, url: company.url, key: company.id });
-       };
-       console.log(this.props.companies)
-       return(<ul>{this.props.companies.map(showCompanies())}</ul>);
+       var showCompanies = (company) => <Company name={company.name} url={company.url} key={company.id} />;
+       return(<ul>{this.props.companies.map(showCompanies)}</ul>);
    }
 });
