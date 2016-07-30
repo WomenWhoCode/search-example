@@ -3,7 +3,7 @@ var Company = React.createClass({
         return(
             <div>
                 <h4>{this.props.name}</h4>
-                <p>{this.props.url}</p>
+                <p>{this.props.company_url}</p>
             </div>
         )
     }
